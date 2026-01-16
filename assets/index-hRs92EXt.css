@@ -573,6 +573,7 @@ body {
 
 nav {
   background-color: white;
+  z-index: 999 !important;
 }
 
 .bg-lblue {
