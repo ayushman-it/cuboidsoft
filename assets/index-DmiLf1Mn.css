@@ -663,7 +663,7 @@ nav {
 
 .section-tag {
   font-size: 13px;
-  color: #094374;
+  color: #1e949e;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -675,7 +675,7 @@ nav {
 }
 
 .firm-title span {
-  color: #094374;
+  color: #1e949e;
 }
 
 .firm-desc {
@@ -699,7 +699,7 @@ nav {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #094374;
+  color: #1e949e;
 }
 
 .founder {
@@ -716,7 +716,7 @@ nav {
 .image-circle {
   width: 380px;
   height: 380px;
-  background: #094374;
+  background: #1e949e;
   border-radius: 50%;
   margin: auto;
   display: flex;
@@ -788,12 +788,12 @@ nav {
   }
 
   .card-body {
-    background-color: #094374;
+    background-color: #1e949e;
     color: white;
     border-radius: 1rem !important;
 
     i {
-      color: #094374;
+      color: #1e949e;
     }
 
     .card-bottom {
@@ -821,7 +821,7 @@ nav {
 .experience-box h2 {
   font-size: 42px;
   font-weight: 800;
-  color: #094374;
+  color: #1e949e;
   margin-bottom: 0;
 }
 
@@ -851,7 +851,7 @@ nav {
 
 .highlight-item strong {
   font-size: 22px;
-  color: #094374;
+  color: #1e949e;
   display: block;
   font-weight: 700;
 }
@@ -871,7 +871,7 @@ nav {
 
 .why-tag {
   font-size: 13px;
-  color: #094374;
+  color: #1e949e;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -904,7 +904,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #094374;
+  color: #1e949e;
   flex-shrink: 0;
 }
 
@@ -938,7 +938,7 @@ nav {
 
 .values-tag {
   font-size: 13px;
-  color: #094374;
+  color: #1e949e;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -950,7 +950,7 @@ nav {
 }
 
 .values-header h2 span {
-  color: #094374;
+  color: #1e949e;
 }
 
 /* Cards */
@@ -979,7 +979,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #094374;
+  color: #1e949e;
 }
 
 .value-card h4 {
@@ -1035,7 +1035,7 @@ nav {
 
 .editorial-tag {
   font-size: 12px;
-  color: #094374;
+  color: #1e949e;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1058,7 +1058,7 @@ nav {
   font-weight: 600;
   color: #000;
   text-decoration: none;
-  border-bottom: 2px solid #094374;
+  border-bottom: 2px solid #1e949e;
 }
 
 /* Responsive */
