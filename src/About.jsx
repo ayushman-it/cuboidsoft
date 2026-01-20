@@ -21,7 +21,7 @@ function About() {
                             <span className="section-tag">Firm Overview</span>
 
                             <h2 className="firm-title">
-                                We Specialize in <span>Transforming Your Ideas</span><br />
+                                We Specialize in <span className="text-lblue">Transforming Your Ideas</span><br />
                                 into Powerful Digital Solutions
                             </h2>
 
@@ -48,56 +48,56 @@ function About() {
                 </div>
             </section>
             <section className="services-highlight">
-  <div className="container">
-    <div className="row align-items-center">
+          <div className="container">
+            <div className="row align-items-center">
 
-      {/* LEFT */}
-      <div className="col-lg-6">
-        <div className="experience-box">
-          <h2>10+</h2>
-          <span>Industries Served</span>
-        </div>
+              {/* LEFT */}
+              <div className="col-lg-6">
+                <div className="experience-box">
+                  <h2>10+</h2>
+                  <span>Industries Served</span>
+                </div>
 
-        <h3 className="highlight-title">
-          We Deliver Scalable Digital
-          Solutions That Grow Your Business
-        </h3>
-      </div>
+                <h3 className="highlight-title">
+                  We Deliver Scalable Digital
+                  Solutions That Grow Your Business
+                </h3>
+              </div>
 
-      {/* RIGHT */}
-      <div className="col-lg-6">
-        <p className="highlight-desc">
-          Empower your business with CuboidSoft IT Solutions.
-          Our expert teams deliver secure, scalable, and future-ready
-          solutions tailored to your goals.
-        </p>
+              {/* RIGHT */}
+              <div className="col-lg-6">
+                <p className="highlight-desc">
+                  Empower your business with CuboidSoft IT Solutions.
+                  Our expert teams deliver secure, scalable, and future-ready
+                  solutions tailored to your goals.
+                </p>
 
-        <div className="highlight-grid">
-          <div className="highlight-item">
-            <strong>120+</strong>
-            <span>Projects Delivered</span>
+                <div className="highlight-grid">
+                  <div className="highlight-item">
+                    <strong>120+</strong>
+                    <span>Projects Delivered</span>
+                  </div>
+
+                  <div className="highlight-item">
+                    <strong>95%</strong>
+                    <span>Client Retention</span>
+                  </div>
+
+                  <div className="highlight-item">
+                    <strong>50+</strong>
+                    <span>Enterprise Solutions</span>
+                  </div>
+
+                  <div className="highlight-item">
+                    <strong>24/7</strong>
+                    <span>Technical Support</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
-
-          <div className="highlight-item">
-            <strong>95%</strong>
-            <span>Client Retention</span>
-          </div>
-
-          <div className="highlight-item">
-            <strong>50+</strong>
-            <span>Enterprise Solutions</span>
-          </div>
-
-          <div className="highlight-item">
-            <strong>24/7</strong>
-            <span>Technical Support</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+        </section>
 <section className="why-us-section">
   <div className="container">
 
