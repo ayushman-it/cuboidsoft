@@ -15,7 +15,7 @@ function Contact() {
                     <div className="row">
                         {/* Form */}
                         <div className="col-lg-7 mb-4">
-                            <p className="text-primary">Start Your Project With Us.</p>
+                            <p className="text-lblue">Start Your Project With Us.</p>
                             <h2 className="mb-4">Let's Talk</h2>
                             <form>
                                 <div className="row mb-3">
@@ -39,9 +39,9 @@ function Contact() {
                         {/* Contact Info */}
                         <div className="col-lg-5">
                             <div className="contact-info">
-                                <p><strong>Address :</strong><br />418 Orange Street<br />Portsmouth, VA 23703</p>
-                                <p><strong>Phone :</strong><br />0987 123 456 678</p>
-                                <p><strong>Email :</strong><br />contact@terio.com</p>
+                                <p><strong>Address :</strong><br />Bangali Square, <br /> Near, 44, Kanadia Main Rd, near Gawde Gym, Ashanagar, Preethi Nagar, Indore, Madhya Pradesh 452016</p>
+                                <p><strong>Phone :</strong><br />+91 8224973413</p>
+                                <p><strong>Email :</strong><br />contact@cuboidsoft.in</p>
                                 <p><strong>Find us :</strong><br />
                                     <a href="#" className="me-2"><i className="bi bi-facebook"></i></a>
                                     <a href="#" className="me-2"><i className="bi bi-twitter"></i></a>

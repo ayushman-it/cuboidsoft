@@ -15,26 +15,46 @@ import "swiper/css/pagination";
 function Home() {
     return (
         <div className="hero-part">
-            <section className="text-center hero-sec">
-                <div className="layer py-5">
+            <section className="hero-sec text-center d-flex align-items-center">
+                <div className="layer w-100 py-5">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="hero-heading py-5 col-12 col-lg-8 m-auto">
-                                    <h1 className="display-3 fw-bold">Modern Solutions. Maximum Impact.</h1>
-                                    <p className="fw-semibold">
-                                        Experience cloud services designed to enhance performance, protect your data, and support your business growth.
+                        <div className="row justify-content-center">
+                            <div className="col-12 col-lg-8">
+                                <div className="hero-heading py-5">
+
+                                    <h1 className="display-4 display-lg-3 fw-bold mb-3">
+                                        Scalable Digital Solutions for Modern Businesses
+                                    </h1>
+
+                                    <p className="fw-semibold fs-5 text-light opacity-75 mb-4">
+                                        We design, develop, and deploy secure cloud-based applications,
+                                        high-performance websites, and custom software solutions that help
+                                        businesses grow faster, operate smarter, and stay future-ready.
                                     </p>
-                                    <div className="my-3 d-flex gap-2 justify-content-center">
-                                        <Link to="/" className="btn bg-primary btn-rounded px-4 rounded-pill text-light bg-lblue">Get Started</Link>
-                                        <Link to="/" className="btn border-1 btn-outline-light btn-rounded px-4 rounded-pill text-light ">Get Started</Link>
+
+                                    <div className="my-3 d-flex flex-wrap gap-3 justify-content-center">
+                                        <Link
+                                            to="/contact"
+                                            className="btn bg-primary px-4 py-2 rounded-pill text-light fw-semibold"
+                                        >
+                                            Start Your Project
+                                        </Link>
+
+                                        <Link
+                                            to="/services"
+                                            className="btn btn-outline-light px-4 py-2 rounded-pill fw-semibold"
+                                        >
+                                            Explore Our Services
+                                        </Link>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <div className="py-4 gred-area  text-center">
                 <div className="gred-bg">
                     <div className="container">
@@ -48,135 +68,191 @@ function Home() {
             <article className="py-4">
                 <div className="container">
                     <div className="row align-items-center">
+
+                        {/* LEFT CONTENT */}
                         <div className="col-md-4 mb-3">
                             <h6 className="text-blue">Who We Are</h6>
-                            <h3 className="mt-2 fw-bold">Building Trust Through Digital Excellence</h3>
+
+                            <h3 className="mt-2 fw-bold">
+                                Building Trust Through Digital Excellence
+                            </h3>
+
                             <hr />
+
                             <p>
-                                <small>  Hendrerit sodales egestas quisque pulvinar ultrices parturient ultricies vel nostra maecenas cubilia. Eget consequat aliquet ligula tellus a finibus dictumst maximus blandit eleifend.</small>
+                                <small>
+                                    We are a technology-driven company focused on delivering reliable,
+                                    scalable, and secure digital solutions. From startups to growing
+                                    enterprises, we help businesses transform ideas into powerful
+                                    digital products that drive real results.
+                                </small>
                             </p>
+
                             <div className="exp-material align-items-center d-flex gap-3">
                                 <div className="w-100 py-2 text-center bg-secondary-subtle">
                                     <h1 className="display-5 mb-0 fw-bold text-lblue">10+</h1>
-                                    <p className="mb-0"><small>Years Experience</small></p>
+                                    <p className="mb-0">
+                                        <small>Years of Industry Experience</small>
+                                    </p>
                                 </div>
+
                                 <div className="exp-mean w-100">
-                                    <h6 className="mb-0">Comprehensive Warranty</h6>
-                                    {/* <p className="mb-0"><small>Comprehensive Warranty
-Consequat quis erat si tellus habitasse vulputate cubilia</small></p> */}
+                                    <h6 className="mb-1">Long-Term Support Commitment</h6>
+                                    {/* <small className="text-muted">
+                                        We stand by our solutions with continuous support, maintenance,
+                                        and performance optimization.
+                                    </small> */}
                                 </div>
                             </div>
                         </div>
+
+                        {/* RIGHT CONTENT */}
                         <div className="col-md-8">
                             <div className="row art-area p-3 bg-secondary-subtle rounded-3">
+
                                 <div className="col-md-6">
-                                    <img src="https://web.creativemox.com/nutekno/wp-content/uploads/sites/8/2025/10/img_16-2048x1024.jpg" alt="" className="w-100 rounded-3 h-100 object-fit-cover" />
+                                    <img
+                                        src="https://web.creativemox.com/nutekno/wp-content/uploads/sites/8/2025/10/img_16-2048x1024.jpg"
+                                        alt="Digital Solutions Team"
+                                        className="w-100 rounded-3 h-100 object-fit-cover"
+                                    />
                                 </div>
+
                                 <div className="col-md-6">
                                     <div className="art-content mt-3 w-100">
-                                        <h4 className="fs-5">Empowering Businesses Through Smart Technology</h4>
+
+                                        <h4 className="fs-5">
+                                            Empowering Businesses Through Smart Technology
+                                        </h4>
+
                                         <hr />
+
                                         <p>
-                                            <small> Tempus suspendisse nostra donec a convallis curabitur cursus dolor porttitor massa tempor</small>
+                                            <small>
+                                                Our team combines strategy, design, and engineering to build
+                                                high-performance websites, cloud platforms, and custom
+                                                software that improve efficiency, enhance user experience,
+                                                and accelerate business growth.
+                                            </small>
                                         </p>
+
                                         <ul className="list-unstyled mt-3">
-                                            <li className="my-2 nav-list"><i className="fa-solid text-blue fa-check"></i> Affordable Pricing</li>
-                                            <li className="my-2 nav-list"><i className="fa-solid text-blue fa-check"></i> Expert Technicians</li>
-                                            <li className="my-2 nav-list"><i className="fa-solid text-blue fa-check"></i> High-Quality Parts</li>
-                                            <li className="my-2 nav-list"><i className="fa-solid text-blue fa-check"></i> Free Diagnostics</li>
-                                            <li className="my-2 nav-list"><i className="fa-solid text-blue fa-check"></i> Convenient Service</li>
+                                            <li className="my-2 nav-list">
+                                                <i className="fa-solid text-blue fa-check"></i> Transparent & Competitive Pricing
+                                            </li>
+                                            <li className="my-2 nav-list">
+                                                <i className="fa-solid text-blue fa-check"></i> Skilled Developers & Cloud Experts
+                                            </li>
+                                            <li className="my-2 nav-list">
+                                                <i className="fa-solid text-blue fa-check"></i> Modern & Secure Technology Stack
+                                            </li>
+                                            <li className="my-2 nav-list">
+                                                <i className="fa-solid text-blue fa-check"></i> Scalable & Future-Ready Solutions
+                                            </li>
+                                            <li className="my-2 nav-list">
+                                                <i className="fa-solid text-blue fa-check"></i> Reliable Post-Launch Support
+                                            </li>
                                         </ul>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </article>
+
             <article className="py-5 bg-white">
                 <div className="container">
                     <div className="row align-items-center">
 
+                        {/* LEFT CONTENT */}
                         <div className="col-lg-6 mb-4 mb-lg-0">
                             <small className="text-lblue fw-semibold">
-                                <span className="logo">Cuboid<span className="text-dark">Soft</span></span> - Welcome To IT Solutions
+                                <span className="logo">Cuboid<span className="text-dark">Soft</span></span> — Trusted IT Solutions Partner
                             </small>
 
                             <h2 className="fw-bold mt-2 mb-3">
-                                Why Choose <span className="logo">Cuboid<span className="text-dark fw-boold">Soft</span></span><br />
-                                IT Solutions
+                                Why Choose <span className="logo">Cuboid<span className="text-dark fw-bold">Soft</span></span><br />
+                                for Your Business
                             </h2>
 
                             <p className="text-muted mb-4">
-                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet velit
-                                sed quia non numquam eius modi tempora incidunt labore.
+                                At CuboidSoft, we help businesses build strong digital foundations
+                                through reliable software development, cloud solutions, and modern
+                                IT services designed for long-term growth.
                             </p>
 
                             <div className="d-flex mb-4">
                                 <div className="me-3">
-                                    <div className="bg-primary px-2 py-2  bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
-                                    >
+                                    <div className="bg-primary px-2 py-2 bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
                                         <i className="fa-solid fa-check text-lblue fs-4"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <h6 className="fw-bold mb-1">Easier To Implement</h6>
+                                    <h6 className="fw-bold mb-1">Easy & Fast Implementation</h6>
                                     <p className="text-muted mb-0">
-                                        Sed incididunt labore dolore magna sed aliquatenim veniam quis ipsum.
+                                        We follow proven development processes to deliver solutions that
+                                        are quick to deploy, easy to manage, and aligned with your goals.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="d-flex mb-4">
                                 <div className="me-3">
-                                    <div className="bg-primary px-2 py-2  bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
-                                    >
+                                    <div className="bg-primary px-2 py-2 bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
                                         <i className="fa-solid fa-check text-lblue fs-4"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <h6 className="fw-bold mb-1">Increase Growth Rates</h6>
+                                    <h6 className="fw-bold mb-1">Accelerated Business Growth</h6>
                                     <p className="text-muted mb-0">
-                                        Sed incididunt labore dolore magna sed aliquatenim veniam quis ipsum.
+                                        Our scalable digital solutions improve efficiency, enhance user
+                                        experience, and support measurable business growth.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="d-flex">
                                 <div className="me-3">
-                                    <div className="bg-primary px-2 py-2  bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
-                                    >
+                                    <div className="bg-primary px-2 py-2 bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
                                         <i className="fa-solid fa-check text-lblue fs-4"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <h6 className="fw-bold mb-1">Branding Of The Future</h6>
+                                    <h6 className="fw-bold mb-1">Future-Ready Digital Branding</h6>
                                     <p className="text-muted mb-0">
-                                        Sed incididunt labore dolore magna sed aliquatenim veniam quis ipsum.
+                                        We create modern, secure, and scalable platforms that strengthen
+                                        your brand presence and keep you ahead in a competitive market.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
+                        {/* RIGHT FORM */}
                         <div className="col-lg-6">
-                            <div className="bg-secondary-subtle p-0  rounded-3 shadow-sm">
+                            <div className="bg-secondary-subtle p-0 rounded-3 shadow-sm">
+
                                 <div className="mb-3">
                                     <img
                                         src="https://t.commonsupport.com/zentec/images/resource/featured-image-1.jpg"
                                         className="img-fluid rounded w-100 mb-1"
-                                        alt="Support Team"
+                                        alt="CuboidSoft Support Team"
                                     />
                                 </div>
 
                                 <div className="p-4">
                                     <h5 className="fw-bold text-center mb-2">
                                         <span className="text-decoration-underline text-lblue">
-                                            Book Your Appointment
+                                            Book a Free Consultation
                                         </span>
                                     </h5>
 
                                     <p className="text-center text-muted mb-4">
-                                        We Help Customers Digital Transformation By IT Solutions
+                                        Tell us about your project and our experts will help you find the
+                                        right digital solution.
                                     </p>
 
                                     <form>
@@ -188,48 +264,70 @@ Consequat quis erat si tellus habitasse vulputate cubilia</small></p> */}
                                                 <input type="text" className="form-control" placeholder="Last Name" />
                                             </div>
                                             <div className="col-md-6">
-                                                <input type="email" className="form-control" placeholder="Email" />
+                                                <input type="email" className="form-control" placeholder="Email Address" />
                                             </div>
                                             <div className="col-md-6">
                                                 <select className="form-select">
-                                                    <option selected>Inquiry About</option>
-                                                    <option>Web Development</option>
-                                                    <option>Mobile App</option>
+                                                    <option selected>Service Interested In</option>
+                                                    <option>Website Development</option>
+                                                    <option>Web Application</option>
+                                                    <option>Mobile App Development</option>
                                                     <option>UI/UX Design</option>
-                                                    <option>Digital Marketing</option>
+                                                    <option>Cloud & Hosting</option>
                                                 </select>
                                             </div>
                                             <div className="col-12 text-center">
                                                 <button className="btn btn-primary bg-lblue px-4 py-2 mt-3">
-                                                    Make a Request
+                                                    Request Consultation
                                                 </button>
                                             </div>
                                         </div>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </article>
+
 
             <article className="py-5 bg-secondary-subtle service-cards">
                 <div className="container">
                     <div className="row">
+
                         <div className="col-md-12">
-                            <div className="text-center">
-                                <h1 className="fw-bold w-75 m-auto">Building Future-Ready Systems with Expert IT Services</h1>
+                            <div className="text-center mb-4">
+                                <h1 className="fw-bold w-75 m-auto">
+                                    Reliable IT Services Designed to Scale Your Business
+                                </h1>
+
+                                <p className="text-muted mt-3 w-75 m-auto">
+                                    We deliver end-to-end technology solutions including web development,
+                                    cloud infrastructure, application engineering, and digital experience
+                                    design—built for performance, security, and long-term growth.
+                                </p>
                             </div>
                         </div>
-                        {services.map((data => (
-                            <div className="col-md-4 my-3">
-                                <Card title={data.title} metadesc={data.metadesc} desc={data.desc} cta={data.cta} ctaLink={data.ctaLink} icons={data.icons}></Card>
+
+                        {services.map((data) => (
+                            <div className="col-md-4 my-3" key={data.title}>
+                                <Card
+                                    title={data.title}
+                                    metadesc={data.metadesc}
+                                    desc={data.desc}
+                                    cta={data.cta}
+                                    ctaLink={data.ctaLink}
+                                    icons={data.icons}
+                                />
                             </div>
-                        )))}
+                        ))}
 
                     </div>
                 </div>
             </article>
+
             <section className="tech-section">
                 <div className="text-center">
                     <h1 className="fw-bold mb-4 m-auto">
@@ -448,7 +546,7 @@ Consequat quis erat si tellus habitasse vulputate cubilia</small></p> */}
                 </div>
             </article>
 
-           
+
 
         </div>
     )

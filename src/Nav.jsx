@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
+import BoxLogo from './assets/box-logo.jpeg';
 import Home from "./Home";
 import About from "./About";
 import Service from "./Service";
@@ -13,13 +14,16 @@ function Nav() {
         <div className="container d-flex align-items-center justify-content-between">
 
           {/* Brand */}
-          <Link to="/" className="navbar-brand text-decoration-none">
-            <h1 className="mb-0 fs-5 logo">
+          <Link to="/" className="navbar-brand d-flex gap-2 align-items-center text-decoration-none">
+            <img src={BoxLogo} alt="Cuboid Soft IT Solutions - Private" style={{width: "50px"}} />
+            <div className="logo-text">
+               <h1 className="mb-0 fs-5 logo">
               Cuboid<b><span className="text-dark">Soft</span></b>
             </h1>
             <p className="small mb-0" style={{ fontSize: "12px" }}>
               IT Solutions - Private <span className="text-lblue">Limited</span>
             </p>
+            </div>
           </Link>
 
           {/* Desktop: basic menus visible */}
@@ -104,7 +108,7 @@ function Nav() {
             <li><Link to="/about" className="text-decoration-none d-block py-2">About</Link></li>
             <li><Link to="/service" className="text-decoration-none d-block py-2">Services</Link></li>
             {/* <li><Link to="/service" className="text-decoration-none d-block py-2">Our Teams</Link></li> */}
-            <li><Link to="/service" className="text-decoration-none d-block py-2">Projects</Link></li>
+            <li><Link to="/projects" className="text-decoration-none d-block py-2">Projects</Link></li>
             <li><Link to="/contact" className="text-decoration-none d-block py-2">Contact Us</Link></li>
           </ul>
 
