@@ -1,0 +1,61 @@
+function Contact() {
+    return (
+        <>
+            <div className="contact-section">
+                {/* Header Section */}
+                <div className="contact-header text-white py-5" style={{ background: "linear-gradient(to right, #094374, #1e949e)" }}>
+                    <div className="container text-center">
+                        <h1 className="fw-bold">Let Us Know What You're Looking For</h1>
+                        <p className="mb-0">Get In Touch</p>
+                    </div>
+                </div>
+
+                {/* Form & Info Section */}
+                <div className="container py-5">
+                    <div className="row">
+                        {/* Form */}
+                        <div className="col-lg-7 mb-4">
+                            <p className="text-primary">Start Your Project With Us.</p>
+                            <h2 className="mb-4">Let's Talk</h2>
+                            <form>
+                                <div className="row mb-3">
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Your Name *" required />
+                                    </div>
+                                    <div className="col">
+                                        <input type="text" className="form-control" placeholder="Your Company *" required />
+                                    </div>
+                                </div>
+                                <div className="mb-3">
+                                    <input type="email" className="form-control" placeholder="Your Email *" required />
+                                </div>
+                                <div className="mb-3">
+                                    <textarea className="form-control" rows="5" placeholder="Your Message *" required></textarea>
+                                </div>
+                                <button type="submit" className="btn btn-outline-primary">Submit</button>
+                            </form>
+                        </div>
+
+                        {/* Contact Info */}
+                        <div className="col-lg-5">
+                            <div className="contact-info">
+                                <p><strong>Address :</strong><br />418 Orange Street<br />Portsmouth, VA 23703</p>
+                                <p><strong>Phone :</strong><br />0987 123 456 678</p>
+                                <p><strong>Email :</strong><br />contact@terio.com</p>
+                                <p><strong>Find us :</strong><br />
+                                    <a href="#" className="me-2"><i className="bi bi-facebook"></i></a>
+                                    <a href="#" className="me-2"><i className="bi bi-twitter"></i></a>
+                                    <a href="#" className="me-2"><i className="bi bi-instagram"></i></a>
+                                    <a href="#"><i className="bi bi-linkedin"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+export default Contact;
