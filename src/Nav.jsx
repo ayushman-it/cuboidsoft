@@ -21,7 +21,7 @@ function Nav() {
               Cuboid<b><span className="text-dark">Soft</span></b>
             </h1>
             <p className="small mb-0" style={{ fontSize: "12px" }}>
-              IT Solutions - Private <span className="text-lblue">Limited</span>
+              IT Services & Digital <span className="text-lblue">Consultancy</span>
             </p>
             </div>
           </Link>

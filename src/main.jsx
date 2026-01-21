@@ -7,6 +7,12 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("../public/service-worker.js");
+  });
+}
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HashRouter>
     <App />

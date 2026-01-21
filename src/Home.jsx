@@ -10,9 +10,36 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useState } from "react";
+
 
 
 function Home() {
+  const [form, setForm] = useState({
+  fname: "",
+  lname: "",
+  email: "",
+  service: ""
+});
+
+const handleChange = (e) => {
+  setForm({ ...form, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const message = `New Consultation Request 👇
+
+Name: ${form.fname} ${form.lname}
+Email: ${form.email}
+Service: ${form.service}`;
+
+  const url = `https://wa.me/918224973413?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+};
+
+
     return (
         <div className="hero-part">
             <section className="hero-sec text-center d-flex align-items-center">
@@ -26,7 +53,7 @@ function Home() {
                                         Scalable Digital Solutions for Modern Businesses
                                     </h1>
 
-                                    <p className="fw-semibold fs-5 text-light opacity-75 mb-4">
+                                    <p className="fs-6 text-light  mb-4">
                                         We design, develop, and deploy secure cloud-based applications,
                                         high-performance websites, and custom software solutions that help
                                         businesses grow faster, operate smarter, and stay future-ready.
@@ -35,13 +62,13 @@ function Home() {
                                     <div className="my-3 d-flex flex-wrap gap-3 justify-content-center">
                                         <Link
                                             to="/contact"
-                                            className="btn bg-primary px-4 py-2 rounded-pill text-light fw-semibold"
+                                            className="btn bg-lblue px-4 py-2 rounded-pill text-light fw-semibold"
                                         >
                                             Start Your Project
                                         </Link>
 
                                         <Link
-                                            to="/services"
+                                            to="/service"
                                             className="btn btn-outline-light px-4 py-2 rounded-pill fw-semibold"
                                         >
                                             Explore Our Services
@@ -60,7 +87,7 @@ function Home() {
                     <div className="container">
                         <div className="d-flex justify-content-center gap-2 align-items-center">
                             <h5 className="fs-6 mb-0 text-light">Upgrade Your IT System with Exclusive Savings!</h5>
-                            <Link to="/" className="btn btn-sm border-1 btn-outline-light btn-rounded px-4 rounded-pill text-light ">Connect</Link>
+                            <Link to="/" className="btn btn-sm border-1 btn-outline-light btn-rounded px-4 rounded-pill">Connect</Link>
                         </div>
                     </div>
                 </div>
@@ -255,20 +282,20 @@ function Home() {
                                         right digital solution.
                                     </p>
 
-                                    <form>
+                                    <form onSubmit={handleSubmit}>
                                         <div className="row g-3">
                                             <div className="col-md-6">
-                                                <input type="text" className="form-control" placeholder="First Name" />
+                                                <input type="text" name="fname" onChange={handleChange} className="form-control" placeholder="First Name" required />
                                             </div>
                                             <div className="col-md-6">
-                                                <input type="text" className="form-control" placeholder="Last Name" />
+                                                <input type="text" name="lname" onChange={handleChange} className="form-control" placeholder="Last Name" required />
                                             </div>
                                             <div className="col-md-6">
-                                                <input type="email" className="form-control" placeholder="Email Address" />
+                                                <input type="email" name="email" onChange={handleChange} className="form-control" placeholder="Email Address" required />
                                             </div>
                                             <div className="col-md-6">
-                                                <select className="form-select">
-                                                    <option selected>Service Interested In</option>
+                                                <select name="service" onChange={handleChange} className="form-select" required>
+                                                    <option value="">Service Interested In</option>
                                                     <option>Website Development</option>
                                                     <option>Web Application</option>
                                                     <option>Mobile App Development</option>
@@ -276,8 +303,9 @@ function Home() {
                                                     <option>Cloud & Hosting</option>
                                                 </select>
                                             </div>
+
                                             <div className="col-12 text-center">
-                                                <button className="btn btn-primary bg-lblue px-4 py-2 mt-3">
+                                                <button type="submit" className="btn btn-primary bg-lblue px-4 py-2 mt-3">
                                                     Request Consultation
                                                 </button>
                                             </div>

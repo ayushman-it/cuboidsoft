@@ -1,4 +1,33 @@
+import { useState } from "react";
+
+
 function Contact() {
+    const [contact, setContact] = useState({
+        name: "",
+        company: "",
+        email: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        setContact({ ...contact, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const text = `New Website Enquiry 👇
+
+        Name: ${contact.name}
+        Company: ${contact.company}
+        Email: ${contact.email}
+        Message: ${contact.message}`;
+
+        const url = `https://wa.me/918224973413?text=${encodeURIComponent(text)}`;
+        window.open(url, "_blank");
+    };
+
+
     return (
         <>
             <div className="contact-section">
@@ -17,23 +46,57 @@ function Contact() {
                         <div className="col-lg-7 mb-4">
                             <p className="text-lblue">Start Your Project With Us.</p>
                             <h2 className="mb-4">Let's Talk</h2>
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div className="row mb-3">
                                     <div className="col">
-                                        <input type="text" className="form-control" placeholder="Your Name *" required />
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            onChange={handleChange}
+                                            className="form-control"
+                                            placeholder="Your Name *"
+                                            required
+                                        />
                                     </div>
                                     <div className="col">
-                                        <input type="text" className="form-control" placeholder="Your Company *" required />
+                                        <input
+                                            type="text"
+                                            name="company"
+                                            onChange={handleChange}
+                                            className="form-control"
+                                            placeholder="Your Company *"
+                                            required
+                                        />
                                     </div>
                                 </div>
+
                                 <div className="mb-3">
-                                    <input type="email" className="form-control" placeholder="Your Email *" required />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        onChange={handleChange}
+                                        className="form-control"
+                                        placeholder="Your Email *"
+                                        required
+                                    />
                                 </div>
+
                                 <div className="mb-3">
-                                    <textarea className="form-control" rows="5" placeholder="Your Message *" required></textarea>
+                                    <textarea
+                                        name="message"
+                                        onChange={handleChange}
+                                        className="form-control"
+                                        rows="5"
+                                        placeholder="Your Message *"
+                                        required
+                                    ></textarea>
                                 </div>
-                                <button type="submit" className="btn btn-outline-primary">Submit</button>
+
+                                <button type="submit" className="btn bg-lblue text-light">
+                                    Submit
+                                </button>
                             </form>
+
                         </div>
 
                         {/* Contact Info */}
