@@ -106,9 +106,9 @@ function Contact() {
                                 <p><strong>Phone :</strong><br />+91 8224973413</p>
                                 <p><strong>Email :</strong><br />contact@cuboidsoft.in</p>
                                 <p><strong>Find us :</strong><br />
-                                    <a href="#" className="me-2"><i className="bi bi-facebook"></i></a>
-                                    <a href="#" className="me-2"><i className="bi bi-twitter"></i></a>
-                                    <a href="#" className="me-2"><i className="bi bi-instagram"></i></a>
+                                    <a href="#" className="me-2"><i className="fa-brands text-lblue fa-facebook"></i></a>
+                                    <a href="#" className="me-2"><i className="fa-brands text-lblue fa-twitter"></i></a>
+                                    <a href="#" className="me-2"><i className="fa-brands text-lblue fa-instagram"></i></a>
                                     <a href="#"><i className="bi bi-linkedin"></i></a>
                                 </p>
                             </div>

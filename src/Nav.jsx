@@ -15,14 +15,14 @@ function Nav() {
 
           {/* Brand */}
           <Link to="/" className="navbar-brand d-flex gap-2 align-items-center text-decoration-none">
-            <img src={BoxLogo} alt="Cuboid Soft IT Solutions - Private" style={{width: "50px"}} />
+            <img src={BoxLogo} alt="Cuboid Soft IT Solutions - Private" style={{ width: "50px" }} />
             <div className="logo-text">
-               <h1 className="mb-0 fs-5 logo">
-              Cuboid<b><span className="text-dark">Soft</span></b>
-            </h1>
-            <p className="small mb-0" style={{ fontSize: "12px" }}>
-              IT Services & Digital <span className="text-lblue">Consultancy</span>
-            </p>
+              <h1 className="mb-0 fs-5 logo">
+                Cuboid<b><span className="text-dark">Soft</span></b>
+              </h1>
+              <p className="small mb-0" style={{ fontSize: "12px" }}>
+                IT Services & Digital <span className="text-lblue">Consultancy</span>
+              </p>
             </div>
           </Link>
 
@@ -141,7 +141,7 @@ function Nav() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-       <Footer />
+      <Footer />
     </>
   );
 }

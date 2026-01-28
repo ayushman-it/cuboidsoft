@@ -27,7 +27,7 @@ function InstallModal() {
       <div className="box">
         <h5>Add CuboidSoft to Home Screen</h5>
         <p>Install our app for quick access.</p>
-        <button className="btn btn-primary" onClick={installApp}>Install</button>
+        <button className="btn btn-primary bg-lblue" onClick={installApp}>Install</button>
       </div>
     </div>
   );
