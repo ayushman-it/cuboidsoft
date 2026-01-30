@@ -65,6 +65,17 @@ const services = [
     icons: "fa-solid fa-diagram-project",
     cta: "Explore",
     ctaLink: "erp-crm-solutions"
+  },
+
+  /* 🔹 WordPress Service */
+
+  {
+    title: "WordPress Development",
+    metadesc: "Powerful & Easy-to-Manage Websites",
+    desc: "Custom WordPress websites, themes, plugins, and performance-optimized solutions built for speed, security, and scalability.",
+    icons: "fa-brands fa-wordpress",
+    cta: "Explore",
+    ctaLink: "wordpress-development"
   }
 ];
 
